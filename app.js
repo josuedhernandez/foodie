@@ -54,17 +54,11 @@ function displayWikiResults(responseJson) {
   if (maxNumber > totalNumResults) {
     maxNumber = totalNumResults;
   }
-  // for (let i = 0; i < maxNumber; i++) {
-  //   console.log(responseJson.query.search[i].title);
-  //   console.log(responseJson.query.search[i].snippet);
-  // };
   $("#wiki-results-list").empty();
   // iterate through the items array
   for (let i = 0; i < maxNumber; i++) {
     // for each recipe object in the items
     //array, add an item to the results
-    console.log(responseJson.query.search[i].title);
-    console.log(responseJson.query.search[i].snippet);
     $("#wiki-results-list").append(
       `<h3><a href="${wikiUrlBase}${responseJson.query.search[
         i
@@ -100,7 +94,6 @@ function searchWikiInfo(query) {
     });
 }
 
-// This function conditionally replaces the contents of the <main> tag based on the state of the store
 function searchFood(food) {
   // Fetch results using the food entry values
   const params = {
