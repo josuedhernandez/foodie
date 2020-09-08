@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none
+}
+
+div {
+    text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+.error-message {
+    color: red;
+}
+
+.wikipedia-results {
+  text-align: left;
+  padding: 40px;
+  margin: auto;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.recipes-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.recipe-item {
+  width: 19%;
+  border-style: groove;
+  margin-bottom: 2.5%;
+}

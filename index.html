@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie | Search</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcom To Foodie</h1>
+        <h2>Your food search oasis</h2>
+    
+        <form id="js-form">
+            <label for="js-search-food">Type a food name</label>
+            <input type="text" name="search-food" id="js-search-food" placeholder="e.g. Hamburger"
+                required pattern="([^\s][A-z\s]+)">
+            <input type="submit" value="Go!">
+        </form>
+    
+        <p id="js-wikierror-message" class="error-message"></p>
+        <p id="js-error-message" class="error-message"></p>
+        <section id="results" class="hidden">
+            <div id="results-wikipages">
+                <h2>Wikipedia Search Results</h2>
+                <div id="wiki-results-list" class="wikipedia-results"></div>
+            </div>
+            <h2>Recipe Search Results</h2>
+            <div id="results-recipes-list" class="recipes-wrapper"></div>
+        </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
