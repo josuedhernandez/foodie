@@ -28,11 +28,28 @@ img {
 .recipes-wrapper {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-between;
 }
 
 .recipe-item {
-  width: 19%;
+  width: 100%;
   border-style: groove;
   margin-bottom: 2.5%;
+}
+
+/* Handle styling for bigger screens */
+@media all and (min-width: 600px) {
+  .recipes-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .recipe-item {
+    width: 19%;
+    border-style: groove;
+    margin-bottom: 2.5%;
+  }
 }
