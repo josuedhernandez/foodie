@@ -2,12 +2,45 @@
   box-sizing: border-box;
 }
 
+html {
+  background-image: url("images/food-table-with-hamburger.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  background-attachment: fixed;
+}
+
+h1, h2 {
+  color: #ffffff;
+}
+
+h3 {
+  color: #2b2b2b;
+}
+
+a {
+  color: #1f3a93;
+}
+
+label {
+  color: #fefefe;
+}
+
+p {
+  color: #3e3e3e;
+}
+
 .hidden {
   display: none
 }
 
 div {
     text-align: center;
+}
+
+form {
+  margin-bottom: 50px;
 }
 
 img {
@@ -22,7 +55,8 @@ img {
   text-align: left;
   padding: 40px;
   margin: auto;
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid #1c2833;
+  background-color: #bb8154;
 }
 
 .recipes-wrapper {
@@ -35,7 +69,9 @@ img {
 .recipe-item {
   width: 100%;
   border-style: groove;
+  border-color: #1c2833;
   margin-bottom: 2.5%;
+  background-color: #bb8154;
 }
 
 /* Handle styling for bigger screens */
