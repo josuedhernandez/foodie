@@ -11,8 +11,37 @@ html {
   background-attachment: fixed;
 }
 
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border-style: dotted; */
+}
+
+form {
+  margin: auto;
+}
+
+.search-child {
+  /* Center vertically and horizontally */
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  margin: -25px 0 0 -25px;/* apply negative top and left margins to truly center the element */
+}
+
 h1, h2 {
   color: #ffffff;
+}
+
+.search h1 {
+  margin-bottom: 0%;
+}
+
+.search h2 {
+  margin-top: 0%;
+  margin-bottom: 30px;
+  font-family: 'Courgette', cursive;
 }
 
 h3 {
@@ -68,7 +97,7 @@ img {
 
 .recipe-item {
   width: 100%;
-  border-style: groove;
+  border-style: inset;
   border-color: #1c2833;
   margin-bottom: 2.5%;
   background-color: #bb8154;
@@ -87,5 +116,24 @@ img {
     width: 19%;
     border-style: groove;
     margin-bottom: 2.5%;
+  }
+
+  .search-child {
+    /* Center vertically and horizontally */
+    left: 32%;
+  }
+  .search h1 {
+    font-size: 60px;
+    margin-bottom: 0%;
+  }
+
+  .search h2 {
+    font-size: 30px;
+    margin-top: 0%;
+    margin-bottom: 30px;
+  }
+
+  .search label {
+    font-size: 20px;
   }
 }

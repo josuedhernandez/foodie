@@ -4,20 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foodie | Search</title>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="app.css">
 </head>
 <body>
     <div class="container">
-        <h1>Welcome To Foodie</h1>
-        <h2>Your food search oasis</h2>
-    
-        <form id="js-form">
-            <label for="js-search-food">Type a food name</label>
-            <input type="text" name="search-food" id="js-search-food" placeholder="e.g. Hamburger"
-                required pattern="([^\s][A-z\s]+)">
-            <input type="submit" value="Go!">
-        </form>
-    
+        <div class="search-container">
+            <div id="js-search-form" class="search-child search">
+                <h1>Welcome To Foodie</h1>
+                <h2>Your food search oasis</h2>
+            
+                <form id="js-form">
+                    <label for="js-search-food">Type a food name</label>
+                    <div>
+                    <input type="search" name="search-food" id="js-search-food" placeholder="e.g. Hamburger"
+                        required pattern="([^\s][A-z\s]+)">
+                    <input type="submit" value="Go!">
+                    </div>
+                </form>
+            </div>
+        </div>
         <p id="js-wikierror-message" class="error-message"></p>
         <p id="js-error-message" class="error-message"></p>
         <section id="results" class="hidden">

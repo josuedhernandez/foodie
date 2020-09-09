@@ -43,6 +43,7 @@ function displayRecipeResults(responseJson) {
     );
   }
   //display the results section
+  $('#js-search-form').removeClass("search-child");
   $("#results").removeClass("hidden");
 }
 
