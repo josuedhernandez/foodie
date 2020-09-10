@@ -70,7 +70,6 @@ function searchWikiInfo(query) {
   };
   const queryString = formatQueryParams(params);
   const url = apisObject.wikipedia.searchURL + "?" + queryString;
-  console.log(url);
   fetch(url)
     .then((response) => {
       if (response.ok) {
