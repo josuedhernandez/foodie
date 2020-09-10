@@ -5,17 +5,8 @@ const apisObject = {
     applicationId: "e6bfc6f0",
     searchURL: "https://api.edamam.com/search",
   },
-  edemanDatabase: {
-    apiKey: "3929d3d2013210baed80b56076b7a8d8",
-    applicationId: "84b5f793",
-    searchURL: "https://api.edamam.com/api/food-database/v2/parser",
-  },
   wikipedia: {
     searchURL: "https://en.wikipedia.org/w/api.php",
-  },
-  zomato: {
-    apiKey: "b4f0a6ac7bb0cfd1937233b7c53758be",
-    searchURL: "https://developers.zomato.com/api/v2.1/search",
   }
 };
 

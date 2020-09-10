@@ -18,6 +18,10 @@ html {
   /* border-style: dotted; */
 }
 
+input[name="search-food"] {
+  border-radius: 25px;
+}
+
 form {
   margin: auto;
 }
@@ -110,6 +114,12 @@ img {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  input[name="search-food"] {
+  border-radius: 25px;
+  width: 300px;
+  height: 30px;
   }
 
   .recipe-item {
