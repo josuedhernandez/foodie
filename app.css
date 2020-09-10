@@ -37,6 +37,7 @@ form {
 h1, h2 {
   color: #ffffff;
   text-shadow: 3px 3px #2a150d;
+  background-color: #bb8154;
 }
 
 .search h1 {
@@ -59,6 +60,7 @@ a {
 
 label {
   color: #fefefe;
+  text-shadow: 2px 2px #2a150d;
 }
 
 p {
