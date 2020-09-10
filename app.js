@@ -7,7 +7,7 @@ const apisObject = {
   },
   wikipedia: {
     searchURL: "https://en.wikipedia.org/w/api.php",
-  }
+  },
 };
 
 // Format query parameters for api fetch
@@ -21,7 +21,6 @@ function formatQueryParams(params) {
 function displayRecipeResults(responseJson) {
   // if there are previous results, remove them
   $("#results-recipes-list").empty();
-  // iterate through the items array
   for (let i = 0; i < responseJson.hits.length; i++) {
     // for each recipe object in the items
     //array, add an item to the results
@@ -34,7 +33,7 @@ function displayRecipeResults(responseJson) {
     );
   }
   //display the results section
-  $('#js-search-form').removeClass("search-child");
+  $("#js-search-form").removeClass("search-child");
   $("#results").removeClass("hidden");
 }
 
@@ -52,14 +51,13 @@ function displayWikiResults(responseJson) {
     // for each recipe object in the items
     //array, add an item to the results
     $("#wiki-results-list").append(
-      `<h3><a href="${wikiUrlBase}${responseJson.query.search[
-        i
-      ].title.replace(/ /g, "_")}" target="_blank">${
-        responseJson.query.search[i].title
-      }</a></h3>
+      `<h3><a href="${wikiUrlBase}${responseJson.query.search[i].title.replace(
+        / /g,
+        "_"
+      )}" target="_blank">${responseJson.query.search[i].title}</a></h3>
       <p>${responseJson.query.search[i].snippet}</p>`
     );
-  };
+  }
 }
 
 function searchWikiInfo(query) {
@@ -119,7 +117,6 @@ function watchFoodie() {
   $("form").submit((event) => {
     event.preventDefault();
     const foodQuery = $("#js-search-food").val().split(/\s+/); // Taking care of double spaces
-    // console.log(`Event caught in form ${foodQuery.join(" ")}`);
     searchWikiInfo(foodQuery.join(" "));
     searchFood(foodQuery.join(" "));
   });
