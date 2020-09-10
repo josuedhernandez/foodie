@@ -38,6 +38,8 @@ h1, h2 {
   color: #ffffff;
   text-shadow: 3px 3px #2a150d;
   background-color: #bb8154;
+  border-radius: 20px;
+  padding: 10px;
 }
 
 .search h1 {
