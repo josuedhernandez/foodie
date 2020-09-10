@@ -36,6 +36,7 @@ form {
 
 h1, h2 {
   color: #ffffff;
+  text-shadow: 3px 3px #2a150d;
 }
 
 .search h1 {
